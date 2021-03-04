@@ -16,5 +16,5 @@ jobs:
       - name: Files checking
         run: ls -la build/*
         env: 
-          CI: "False"
+          CI: "false"
         
