@@ -13,3 +13,7 @@ jobs:
           node-version: 12.21.0
       - name: build and install
         run: node --version
+        run: npm install && npm run build
+      - name: Files checking
+        run: ls -la build/*
+        
