@@ -20,5 +20,5 @@ jobs:
       - name: Files checking
         run: ls -la build/*
       - name : Deploy S3
-        run: cd build && AWS_ACCESS_KEY_ID=AKIA5IFJ72HWW5PGQLGA AWS_SECRET_ACCESS_KEY=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 aws s3 sync . s3://treinazapd --acld public-read --delete
+        run: cd build && AWS_ACCESS_KEY_ID=AKIA5IFJ72HWW5PGQLGA AWS_SECRET_ACCESS_KEY=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 aws s3 sync . s3://treinazapd --acl public-read --delete
         
