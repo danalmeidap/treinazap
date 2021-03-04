@@ -1,4 +1,3 @@
-
 name: Treinazap -PRD-PARA S3 
 
 on:
@@ -15,7 +14,4 @@ jobs:
         with:
           node-version: 12
       - run: ls -la
-      - run: pẃd
-      
-
-  
+      - run: pwd
