@@ -11,12 +11,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.21.0
-      - name: install
-        run: npm install
-      - name: change firebase2.js
-        run: cd scr && mv firebase2.js firebase.js
-      - name: build
-        run: npm run build
+      - name: build and install
+        run: npm install && npm run build
       - name: Files checking
         run: ls -la build/*
         
